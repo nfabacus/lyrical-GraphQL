@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './style/style.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import ApolloClient from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
 import { HashRouter } from 'react-router-dom'
