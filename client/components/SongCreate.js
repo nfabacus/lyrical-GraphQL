@@ -19,7 +19,7 @@ class SongCreate extends Component {
     
     this.props.mutate({
       variables: { title: this.state.title },
-      refetchQueries: [{ query }]
+      refetchQueries: [{ query }]   // use this refetchQueries where query is not associated with the component (i.e.SongCreate)
     }).then(()=> this.props.history.push('/'))
   }
 
