@@ -8,7 +8,9 @@ import { HashRouter } from 'react-router-dom'
 import App from './components/App'
 import SongList from './components/SongList'
 
-const client = new ApolloClient({})
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id //this will automatically refetch data which has root id. in case of lyricCreate, it has song id.
+})
 
 
 const Root = () => {
